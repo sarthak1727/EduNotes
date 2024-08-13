@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root{
+      
+      --bg-green-600:#275030;
+      --bg-green-500:#27503e;
+      --bg-green-400:#216c53;
+      --bg-green-300:#33866a;
+      --bg-green-200:#98d6bb;
+      --bg-green-100:#b8e4d1;
+      --bg-black-900: #212121;
+      --bg-green-50:#C7E8CA;
+      --bg-grey-50:#F6FBF4;
+      --bg-border-100:#004225;
+  }
+  body{
+    /* background-color: #EADBC8; */
+    /* background-color:var(--bg-border-100); */
+    background-color: #ffe9f3;
+    overflow-y: hidden;
+    /* overflow: hidden; */
+    /* border-radius: 50px; */
+    
+  }
+  i{
+    padding-left: 9px;
+  }
+  a{
+  text-decoration: none;
+  color: black;
+  /* color: #fff; */
+  }
+  .Main{
+    width: 98%;
+    height: 97vh;
+    margin: 10px 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px -1px #000000; 
+  box-shadow: 0px 0px 15px -1px #000000;
+    border-radius: 20px;
+    display: flex;
+  }
+  .left{
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .leftHead{
+      margin-top: 20px;
+      margin-left: 30px;
+  }
+  hr{
+      
+      
+      background-color: #fff;
+      height: 5px;
+      width: 70%;
+      
+  }
+  .leftmid{
+      /* border-right: 2px solid #EADBC8; */
+      border-right: 2px solid var(--bg-green-300);
+      
+  }
+  .leftend{
+      /* border-right: 2px solid #EADBC8; */
+      border-right: 2px solid var(--bg-green-300);
+  }
+  .leftmidlist{
+      list-style-type: none;
+      cursor: pointer;
+  }
+  .leftmidlist li{
+      font-size: 1.2rem;
+       padding: 0px 0px 10px 0px;
+       font-family: 'Ubuntu', sans-serif;
+       /* padding:14px 2px 10px 10px; */
+  }
+  .leftmidlist li:hover{
+      /* background-color: #EADBC8; */
+      /* background-color: var(--bg-green-50); */
+      /* border: 2px solid var(--bg-green-500); */
+      background-color: #FFF6F4;
+      border-bottom: 2px solid #33866a;
+  }
+  /* .leftmid p{
+      padding-left: 4px;
+      margin-left: 32px;
+      color:cadetblue;
+  } */
+  .end{
+      /* margin-left: 20px; */
+      font-size: 1rem;
+      
+  }
+  
+  .popup {
+      position: relative;
+      display: inline-block;
+      margin-top: 0px;
+      margin-right: 20px;
+    }
+  
+    .popup-btn {
+      background-color: #fff;
+      color: black;
+      width: 100%;
+      padding: 0px 40px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .popup-content {
+      display: none;
+      position: absolute;
+      /* background-color: #EADBC8; */
+      background-color: #FFF6F4;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      z-index: 1;
+      animation: fadeInScale 0.3s ease;
+      top: calc(-100% - 10px); /* Adjust this value as needed */
+    }
+  
+    .popup:hover .popup-content {
+      display: block;
+    }
+  
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  
+    .popup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s;
+    }
+  
+    .popup-content a:hover {
+      background-color: #F8F0E5;
+      border: 2px solid var(--bg-green-100);
+      /* background-color: #F6FBF4; */
+    }
+  
+  
+  
+  
+  
+  .right{
+    width: 85%;
+    height: 100%;
+    background-color:#fff;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+  }
+  .right-first{
+    flex: 0 0 95%;
+    max-width: 95%;
+    /* background-color: #000000; */
+  }
+
+.right-first-top{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    
+}
+.right-firstleft{
+    flex: 0 0 15%;
+    max-width: 15%;
+    height: 100%;
+}
+.DaysContainer{
+    height: 11%;
+    width: 90%;
+    background-color: #f6efee;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 1.2rem;
+    -webkit-box-shadow: 0px 0px 15px -8px #000000; 
+box-shadow: 0px 0px 15px -8px #000000;
+}
+.DaysContainer1{
+    height: 11%;
+    width: 90%;
+    background-color: #f6efee;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 1.2rem;
+    
+}
+.DaysContainer p{
+    padding-top: 20px;
+}
+.right-firstRight{
+    
+    width: fit-content;
+    height: 100%;
+    overflow-x: scroll;
+    /* background-color: #000000; */
+    /* display: flex;
+    flex-direction: row; */
+}
+.H-ROW{
+    /* width: 3000px; */
+    width: fit-content;
+    height: 11%;
+    margin-bottom: 7px;
+    background-color: #fff;
+    display: flex;
+    
+
+}
+.H-ROW p{
+    /* line-height: 20px; */
+    font-size: 0.9rem;
+    font-family: 'Stardos Stencil', cursive;
+    margin: 0;
+}
+.hour{
+    width: 200px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 0px 10px 10px 0;
+    background-color: #f9e9ec;
+    overflow: auto;
+    resize: horizontal;
+    border-left: 3px solid #89216b;
+    padding: 5px;
+    
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+.hour::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .hour::-webkit-scrollbar-thumb {
+    background: #e2b6cf;
+    border-radius: 5px;
+  }
+  .hour::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+  }
+.hour1{
+    width: 200px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #f9e9ec;
+    display: grid;
+    place-items: center;
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 1.2rem;
+    
+}
+.hour1 p{
+    padding-top: 20px;
+}
+
+
+
+
+.right-first-bottom{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    
+}
+
+
+
+
+
+
+  .right-second{
+    /* flex: 0 0 27%;
+    max-width: 27%; */
+    margin: 40px 0 20px 20px;
+    overflow-y: auto;
+  }
+  h3{
+    font-family: 'Stardos Stencil', cursive;
+  }
+  .Task-Con{
+    width: 100%;
+    height: 93%;
+    
+  }
+  .MyTask{
+    width: 98%;
+    min-height: 25%;
+    background-color: #e2b6cf;
+    margin: 0 0px 5px 5px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    font-family: 'Stardos Stencil', cursive;
+  }
+
+  .MyTask::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .MyTask::-webkit-scrollbar-thumb {
+    background: #89216b;
+    border-radius: 5px;
+  }
+  .MyTask::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+  }
+
+  .right-second::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .right-second::-webkit-scrollbar-thumb {
+    background: #89216b;
+    border-radius: 5px;
+  }
+  .right-second::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+  }
+  .Task-head{
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #89216b;
+    border-radius: 20px;
+    position: absolute;
+    width: 0px;
+}
+hr{
+    width: 100%;
+    margin-top:15px;
+}
+.addDiv{
+    position: relative;
+}
+.addDiv button{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: -20px;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+}
+.addDiv i{
+    padding: 0;
+}

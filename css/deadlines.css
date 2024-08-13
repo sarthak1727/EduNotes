@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #DAC0A3;
+    /* overflow: hidden; */
+    /* border-radius: 50px; */
+    
+  }
+  i{
+    padding-left: 9px;
+  }
+  a{
+  text-decoration: none;
+  color: black;
+  /* color: #fff; */
+  }
+  hr{
+    
+    
+    background-color: #fff;
+    height: 5px;
+    width: 70%;
+    
+}
+  .main{
+    width: 97%;
+    height: 97vh;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: #F8F0E5;
+    display: flex;
+  }
+  .left{
+    width: 18%;
+    height: 100%;
+    /* background-color: aqua; */
+
+  }
+  .leftHead{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.leftmid{
+    border-right: 2px solid #fff;
+    
+}
+.leftmidlist{
+    list-style-type: none;
+    cursor: pointer;
+}
+.leftmidlist li{
+    font-size: 1.2rem;
+     padding: 4px 0px 10px 0px;
+     
+     /* padding:14px 2px 10px 10px; */
+}
+.leftmidlist li:hover{
+    background-color: #EADBC8;
+}
+.leftmid p{
+    padding-left: 4px;
+    margin-left: 32px;
+    color:cadetblue;
+}
+
+.leftend{
+    border-right: 2px solid #fff;
+}
+.end{
+    margin-left: 20px;
+    font-size: 1rem;
+    
+}
+
+
+  .right{
+    width: 82%;
+    height: 100%;
+    /* background-color: black; */
+  }
+  .right-Content{
+    width: 97%;
+    height: 97%;
+    margin: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* display: grid;
+    justify-content: center; */
+}
+/* .todoHeading{
+    margin: 40px auto;
+} */
+.todoHeading h1{
+   
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.MyTodoList{
+    width: 600px;
+    min-height: 300px;
+    /* height: fit-content; */
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 20px auto;
+    background-color: #DAC0A3;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* -webkit-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px, 15px 15px 5px 5px rgba(0,0,0,0); 
+box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px, 15px 15px 5px 5px rgba(0,0,0,0); */
+}
+.History_head h3{
+    margin: 6px auto 2px 64px;
+    font-size: 1.4rem;
+  }
+  .ToDo i{
+    margin: 0px 5px 20px auto;
+      padding-top: 20px;
+      cursor: pointer;
+  }
+  .History_head{
+    display: flex;
+  
+  }
+  .popup1 {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    margin: 0 auto;
+    /* margin-right: 20px; */
+  }
+  .popup1 li{
+    list-style: none;
+  }
+
+  .popup-btn1 {
+    background-color: #F8F0E5;
+    color: black;
+    width: 10%;
+    
+    /* padding: 0px 40px; */
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+  }
+
+  .popup-content1 {
+    display: none;
+    position: absolute;
+    background-color: #EADBC8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 3;
+    animation: fadeInScale 0.3s ease;
+    top: calc(-100% + 50px); /* Adjust this value as needed */
+    right: 20px;
+  }
+
+  .popup1:hover .popup-content1 {
+    display: block;
+    z-index: 3;
+  }
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .popup-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .popup-content1 a:hover {
+    background-color: #F8F0E5;
+    z-index: 9;
+  }
+.mylist li{
+    display: flex;
+    padding-left: 4px;
+    font-size: 1.3rem;
+  }
+  
+
+/* input[type="text"] {
+    Add your styles here
+}
+
+input[type="checkbox"] {
+    Add your styles here
+} */
+.addNew{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+  
+  
+  .mylist p{
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+    input:checked+li {
+    text-decoration: line-through;
+    /* display: inline; */
+    text-decoration-color: #102C57;
+  }
+  input[type="checkbox"] {
+    display: flex;
+    /* height: 8px; */
+  }
+  .checkli{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+  }
+
+
+
+
+
+  .todoItems{
+    border: none;
+    width: 400px;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    /* color: #fff; */
+  }
+  .dropClock{
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    margin-left: 30%;
+    background-color: #102C57;
+    display: block;
+    color: #fff;
+    z-index: 12;
+    border-radius: 0 0 20px 20px;
+    }
+    .timer{
+      text-align: center;
+      font-size: 1.5rem;
+    }

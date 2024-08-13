@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carter+One&family=Clicker+Script&family=Lilita+One&family=Lobster&family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@600;900&family=Oleo+Script&family=Open+Sans:wght@600&family=Patua+One&family=Poppins:wght@200;300;400;600;700&family=Stardos+Stencil:wght@400;700&family=Tektur&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carter+One&family=Clicker+Script&family=Lilita+One&family=Lobster&family=Montserrat+Alternates:wght@400;500;700&family=Montserrat:wght@600;900&family=Oleo+Script&family=Open+Sans:wght@600&family=Patua+One&family=Poppins:wght@200;300;400;600;700&family=Stardos+Stencil:wght@400;700&family=Tektur&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carter+One&family=Clicker+Script&family=Lilita+One&family=Lobster&family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@600;900&family=Oleo+Script&family=Open+Sans:wght@600&family=Patua+One&family=Poppins:wght@200;300;400;600;700&family=Stardos+Stencil:wght@400;700&family=Tektur&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/PlanNew.css" />
+    <script
+      src="https://kit.fontawesome.com/ecb170e391.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="Main">
+        <div class="left">
+            <div class="leftHead">
+              <h3>Edu_Hub</h3>
+              <hr />
+            </div>
+            <div class="leftmid">
+              <ul class="leftmidlist" id="leftmidlist">
+                <li>
+                  <i class="fa-solid fa-house-user fa-lg"></i
+                  ><a href="/index.html">&emsp;Home</a>
+                </li>
+                <li style="padding-left: 3px">
+                  <i
+                    class="fa-solid fa-note-sticky fa-lg"
+                    style="color: #000000"
+                  ></i
+                  ><a href="/Notes.html">&emsp;Notes</a>
+                </li>
+                <li style="padding-left: 3px">
+                  <i class="fa-solid fa-square-plus fa-lg"></i
+                  ><a href="/create.html">&emsp;Create New</a>
+                </li>
+                <li style="padding-left: 3px">
+                  <i class="fa-solid fa-chart-line fa-lg"></i><a href="/Dashboard.html">&emsp;Dashboard</a>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-clipboard-list fa-lg"
+                    style="color: #000000"
+                  ></i
+                  ><a href="/PlanNew.html">&emsp;Plans</a>
+                </li>
+              </ul>
+            </div>
+            <div class="leftend">
+              <ul class="leftmidlist end" id="leftmidlist">
+                <li>
+                  <i class="fa-solid fa-list-check fa-sm" style="color: #000000"></i
+                  ><a href="/todo.html">&emsp;To-do</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-warehouse fa-sm" style="color: #000000;"></i>
+                  <a href="/storage.html">&emsp;Storage</a>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-hourglass-end fa-sm"
+                    style="color: #000000"
+                  ></i
+                  ><a href="/deadlines.html">&emsp;Deadlines</a>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-calendar-days fa-sm"
+                    style="color: #000000"
+                  ></i
+                  ><a href="/calendar.html">&emsp;Calendar</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-text-width fa-sm" style="color: #000000"></i
+                  ><a href="/naviClock.html">&emsp;Summarization</a>
+                </li>
+              </ul>
+              <ul class="leftmidlist" id="leftmidlist">
+                <li>
+                  <i class="fa-solid fa-gears fa-lg" style="color: #000000"></i
+                  ><a href="/index.html">&emsp;Settings</a>
+                </li>
+                <div class="popup">
+                  <li class="popup-btn">
+                    <i class="fa-solid fa-user fa-lg" style="color: #000000"></i
+                    >&emsp;Profile
+                  </li>
+                  <div class="popup-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Sign Out</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-first">
+                <div class="right-first-top">
+                    <div class="right-firstleft">
+                        <div class="DaysContainer1" style="background-color: #fff;">
+
+                        </div>
+                        <div class="DaysContainer">
+                            <p>Monday</p>
+                        </div>
+                        <div class="DaysContainer">
+                            <p>Tuesday</p>
+                        </div>
+                        <div class="DaysContainer">
+                            <p>Wedday</p>
+                        </div>
+                        <div class="DaysContainer">
+                            <P>Thursday</P>
+                        </div>
+                        <div class="DaysContainer">
+                            <P>Friday</P>
+                        </div>
+                        <div class="DaysContainer">
+                            <p>Satday</p>
+                        </div>
+                        <div class="DaysContainer">
+                            <p>Sunday</p>
+                        </div>
+                    </div>
+                    <div class="right-firstRight">
+                        <div class="H-ROW">
+                            <div class="hour1">
+                                <p>9:00 am</p>
+                            </div>
+                            <div class="hour1">
+                                <p>10:00 am</p>
+                            </div>
+                            <div class="hour1">
+                                <p>11:00 am</p>
+                            </div>
+                            <div class="hour1">
+                                <p>12:00 Noon</p>
+                            </div>
+                            <div class="hour1">
+                                <p>1:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>2:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>3:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>4:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>5:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>6:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>7:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>8:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>9:00 pm</p>
+                            </div>
+                            <div class="hour1">
+                                <p>10:00 pm</p>
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        <div class="H-ROW">
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+                                
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                            <div class="hour">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                    
+                <!-- <div class="right-first-bottom" id="container">
+                    
+                </div> -->
+            </div>
+            <!-- <div class="right-second">
+                <h3>Task manager</h3>
+                <div class="Task-Con" id="container">
+                    <div class="whole">
+                        <div class="MyTask">
+                            
+                            <div class="Task-head">
+                                <p>Started On</p>
+                                <p>Will End On</p>
+                            </div>
+                            <p>Started New Project</p>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              </p>
+                              
+                              <div class="progress-container">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="addDiv">
+                            <hr>
+                            <button id="addDivButton" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div> -->
+          </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const listItems = document.querySelectorAll("#leftmidlist li");
+
+        listItems.forEach((li) => {
+          li.addEventListener("click", function () {
+            const link = li.querySelector("a");
+            if (link) {
+              window.location.href = link.href;
+            }
+          });
+        });
+      });
+//       document.addEventListener("DOMContentLoaded", function () {
+//     const startDate = new Date("2023-01-01"); // Replace with your start date
+//     const endDate = new Date("2023-12-31");   // Replace with your end date
+//     const currentDate = new Date();
+
+//     const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+//     const daysPassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
+//     const progressPercentage = (daysPassed / totalDays) * 100;
+
+//     const progressBar = document.querySelector(".progress-bar");
+//     progressBar.style.width = progressPercentage + "%";
+// });
+const addDivButton = document.getElementById("addDivButton");
+        const container = document.getElementById("container");
+
+        // Counter to keep track of the number of created divs
+        let divCount = 0;
+
+        // Function to create a new div and add it to the container
+        function createDiv() {
+            const newDiv = document.createElement("div");
+            newDiv.className = "whole";
+
+            newDiv.innerHTML = `
+                <div class="MyTask">
+                    <div class="Task-head">
+                        <p>Started On</p>
+                        <p>Will End On</p>
+                    </div>
+                    <p>Started New Project</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="addDiv"></div>
+            `;
+
+            container.appendChild(newDiv);
+        }
+
+        // Add a click event listener to the button
+        addDivButton.addEventListener("click", createDiv);
+        function applyProgressLogic(div) {
+            const startDate = new Date("2023-01-01"); // Replace with your start date
+            const endDate = new Date("2023-12-31");   // Replace with your end date
+            const currentDate = new Date();
+
+            const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+            const daysPassed = Math.ceil((currentDate - startDate) / (1000 * 60 * 60 * 24));
+            const progressPercentage = (daysPassed / totalDays) * 100;
+
+            const progressBar = div.querySelector(".progress-bar");
+            progressBar.style.width = progressPercentage + "%";
+        }
+
+        // Apply the progress logic to all existing divs with the class "whole"
+        const wholeDivs = document.querySelectorAll(".whole");
+        wholeDivs.forEach(applyProgressLogic);
+    </script>
+</body>
+</html>

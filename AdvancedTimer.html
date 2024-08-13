@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .timerT {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: black;
+z-index: 5;
+  }
+  .wholeT{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    display: grid;
+    justify-content: center;
+  }
+  .TT{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 10px #EADBC8; 
+box-shadow: 0px 0px 15px 10px #EADBC8
+  }
+  .circleT{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    background-color: #DAC0A3;
+    z-index: 10;
+    position: relative;
+
+  }
+  .circleT::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+  .controlsT {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .controlsT button{
+    height: 45px;
+    padding: 0px 20px;
+    background-color: #EADBC8;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .controlsT button:hover{
+    background-color: #DAC0A3;
+  }
+  .labelControls{
+    display: grid;
+    justify-content:center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+  }
+  .labelControls label{
+    color: black;
+    font-size: 1.1rem;
+  }
+  .labelControls input{
+    border-color: #DAC0A3;
+  }
+</style>
+</head>
+<body>
+    <div class="wholeT">
+        <div class="TT">
+            <div class="circleT">
+                <div class="timerT">00:00:00</div>
+            </div>
+        </div>
+        <div class="labelControls">
+            <div class="level"><label for="hours">Hours:</label>
+                <input type="number" id="hoursT" value="0" min="0"></div>
+            <div class="level">
+                <label for="minutes">Minutes:</label>
+            <input type="number" id="minutesT" value="0" min="0" max="59">
+            
+            </div>
+            <div class="lavel">
+                <label for="seconds">Seconds:</label>
+                <input type="number" id="secondsT" value="0" min="0" max="59">
+            </div>
+            
+          </div>
+          <div class="controlsT">
+            <button id="startT">Start</button>
+            <button id="pauseT">Pause</button>
+            <button id="resetT">Reset</button>
+          </div>
+    </div>
+
+
+
+<script>
+  let timerInter;
+  let remainingTime = 0;
+  let isPause = false;
+
+  const timerDispla = document.querySelector(".timerT");
+  const hoursInput = document.getElementById("hoursT");
+  const minutesInput = document.getElementById("minutesT");
+  const secondsInput = document.getElementById("secondsT");
+  const startButto = document.getElementById("startT");
+  const pauseButto = document.getElementById("pauseT");
+  const resetButto = document.getElementById("resetT");
+
+  function updateTimer() {
+    if (remainingTime <= 0) {
+      clearInterval(timerInter);
+      timerInter = null;
+      timerDispla.textContent = "00:00:00";
+    } else {
+      remainingTime -= 1000;
+      timerDispla.textContent = formatTime(remainingTime);
+    }
+  }
+
+  function formatTime(ms) {
+    const date = new Date(ms);
+    return date.toISOString().substr(11, 8);
+  }
+
+  startButto.addEventListener("click", () => {
+    if (!timerInter) {
+      const hours = parseInt(hoursInput.value) || 0;
+      const minutes = parseInt(minutesInput.value) || 0;
+      const seconds = parseInt(secondsInput.value) || 0;
+      remainingTime = (hours * 3600 + minutes * 60 + seconds) * 1000;
+      timerInter = setInterval(updateTimer, 1000);
+    }
+  });
+
+  pauseButto.addEventListener("click", () => {
+    isPause = !isPause;
+    pauseButto.textContent = isPause ? "Resume" : "Pause";
+    if (!isPause) {
+      timerInter = setInterval(updateTimer, 1000);
+    } else {
+      clearInterval(timerInter);
+      timerInter = null;
+    }
+  });
+
+  resetButto.addEventListener("click", () => {
+    clearInterval(timerInter);
+    timerInter = null;
+    remainingTime = 0;
+    isPause = false;
+    timerDispla.textContent = "00:00:00";
+    pauseButto.textContent = "Pause";
+    hoursInput.value = 0;
+    minutesInput.value = 0;
+    secondsInput.value = 0;
+  });
+</script>
+</body>
+</html>

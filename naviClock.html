@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    #clock {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div id="clock">12:00:00</div>
+  <!-- Your page content here -->
+  <script>
+    function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = currentTime;
+  }
+  
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+  
+  // Initial update
+  updateClock();
+  
+  </script>
+</body>
+</html>

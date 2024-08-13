@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wg
+ht@400;900&family=Patua+One&family=Poppins&family=Tektur&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/plans.css" />
+    <script
+      src="https://kit.fontawesome.com/ecb170e391.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <div class="Main">
+    <div class="dropClock"><div class="timer">00:00:00</div></div>
+
+    <div class="L">
+      <div class="leftHead">
+        <h3>Edu_Hub</h3>
+        <hr />
+      </div>
+      <div class="leftmid">
+        <ul class="leftmidlist" id="leftmidlist">
+          <li>
+            <i class="fa-solid fa-house-user fa-lg"></i
+            ><a href="/index.html">&emsp;Home</a>
+          </li>
+          <li style="padding-left: 3px">
+            <i class="fa-solid fa-square-plus fa-lg"></i
+            ><a href="/create.html">&emsp;Create New</a>
+          </li>
+          <li style="padding-left: 3px">
+            <i
+              class="fa-solid fa-note-sticky fa-lg"
+              style="color: #000000"
+            ></i
+            ><a href="/Notes.html">&emsp;Notes</a>
+          </li>
+          <li style="padding-left: 3px">
+            <i class="fa-solid fa-bell fa-lg"></i
+            ><a href="/index.html">&emsp;Notifications</a>
+          </li>
+        </ul>
+        <p>Workspace</p>
+      </div>
+      <div class="leftend">
+        <ul class="leftmidlist end" id="leftmidlist">
+          <li>
+            <i class="fa-solid fa-hourglass-end fa-sm"></i
+            ><a href="/deadlines.html">&emsp;Deadlines</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-list-check fa-sm"></i
+            ><a href="/todo.html">&emsp;To-do</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-text-width fa-sm"></i
+            ><a href="/index.html">&emsp;Summarization</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calendar-days fa-sm"></i
+            ><a href="/calendar.html">&emsp;Calendar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-headphones fa-sm" style="color: #000000"></i
+            ><a href="/index.html">&emsp;Music</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-trash-can fa-sm" style="color: #000000"></i
+            ><a href="/index.html">&emsp;Trash</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="R">
+      <h1>Eisenhower Matrix</h1>
+      <div class="content">
+        <div class="headingPart">
+          <div class="headP1"></div>
+          <div class="headP2"><p>Urgent</p></div>
+          <div class="headP3"><p>Not Urgent</p></div>
+        </div>
+        <div class="Important">
+          <div class="Important1"><p>Important</p></div>
+          <div class="ImportantP" contenteditable="true">
+            <h4>DO</h4>
+            <ol>
+              <li>First</li>
+              <li>Second</li>
+              <li>Third</li>
+            </ol>
+          </div>
+          <div class="ImportantP" contenteditable="true">
+            <h4>Decide</h4>
+            <ol>
+              <li>First</li>
+              <li>Second</li>
+              <li>Third</li>
+            </ol>
+          </div>
+        </div>
+        <div class="Important">
+          <div class="Important1"><p> Not Important</p></div>
+          <div class="ImportantP" contenteditable="true">
+            <h4Delegate</h4>
+            <ol>
+              <li>First</li>
+              <li>Second</li>
+              <li>Third</li>
+            </ol>
+          </div>
+          <div class="ImportantP" contenteditable="true">
+            <h4>Delete</h4>
+            <ol>
+              <li>First</li>
+              <li>Second</li>
+              <li>Third</li>
+            </ol>
+          </div>
+        </div>
+        
+          
+          
+      </div>
+      <div class="submit">
+        <button type="button" class="btn btn-outline-warning">Save</button>
+
+      </div>
+
+      </div>
+    </div>
+ 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const listItems = document.querySelectorAll("#leftmidlist li");
+
+      listItems.forEach((li) => {
+        li.addEventListener("click", function () {
+          const link = li.querySelector("a");
+          if (link) {
+            window.location.href = link.href;
+          }
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>

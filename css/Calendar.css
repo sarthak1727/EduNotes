@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DAC0A3;
+    /* overflow: hidden; */
+    /* border-radius: 50px; */
+    
+}
+i{
+    padding-left: 9px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  /* color: #fff; */
+}
+hr{
+    
+    
+    background-color: #fff;
+    height: 5px;
+    width: 70%;
+    
+}
+.main{
+    width: 97%;
+    height: 97vh;
+    margin: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #F8F0E5;
+}
+.left{
+    width: 18%;
+    height: 100%;
+    
+}
+
+.leftHead{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.leftmid{
+    border-right: 2px solid #fff;
+    
+}
+.leftmidlist{
+    list-style-type: none;
+    cursor: pointer;
+}
+.leftmidlist li{
+    font-size: 1.2rem;
+     padding: 4px 0px 10px 0px;
+}
+.leftmidlist li:hover{
+    background-color: #EADBC8;
+}
+.leftmid p{
+    padding-left: 4px;
+    margin-left: 32px;
+    color:cadetblue;
+}
+
+.leftend{
+    border-right: 2px solid #fff;
+}
+.end{
+    margin-left: 20px;
+    font-size: 1rem;
+    
+}
+
+.right{
+    width: 82%;
+    height: 100%;
+    
+}
+.right-Content{
+    width: 97%;
+    height: 97%;
+    margin: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+#calendarContainer{
+    width: 95%;
+    height: 90%;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+input{
+    padding:5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.dead{
+    padding-left: 20px;
+    display: flex;
+}
+.warning-message {
+    color: red;
+  }
+
